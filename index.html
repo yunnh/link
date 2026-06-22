@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="notranslate" data-google-annotation="notranslate">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
   <title>LINE友だち追加</title>
   <style>
-    /* 全体の背景（アイボリー・白系） */
     body {
       background-color: #f9f6f0; 
       color: #4a3f35; 
@@ -18,14 +18,13 @@
       max-width: 400px;
       margin: 0 auto;
     }
-    /* ★ 丸いプロフィール画像の設定 */
     .profile-img {
       width: 100px;
       height: 100px;
-      object-fit: cover; /* 縦横比を崩さずに綺麗に収めます */
-      border-radius: 50%; /* 写真を綺麗な丸型に切り抜きます */
-      border: 3px solid #ffffff; /* 白い可愛い枠線 */
-      box-shadow: 0 4px 10px rgba(74, 63, 53, 0.1); /* 軽い影 */
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ffffff;
+      box-shadow: 0 4px 10px rgba(74, 63, 53, 0.1);
       margin-bottom: 15px;
     }
     .greeting {
@@ -35,7 +34,6 @@
       line-height: 1.8;
       letter-spacing: 0.5px;
     }
-    /* LINE追加ボタン */
     .line-btn {
       display: block;
       background-color: #61bb7d; 
@@ -53,7 +51,6 @@
       font-size: 13px;
       margin: 20px 0;
     }
-    /* ボックス（白）と枠線（ベージュブラウン） */
     .box {
       background-color: #ffffff;
       border: 1px solid #e6ded4;
@@ -75,7 +72,6 @@
       font-size: 12px;
       margin-bottom: 20px;
     }
-    /* ID表示部分 */
     .id-display {
       background-color: #fbf9f6;
       border: 1px solid #f0eae1;
@@ -87,7 +83,6 @@
       letter-spacing: 1px;
       color: #5c4e40;
     }
-    /* コピーボタン */
     .copy-btn {
       background-color: #8c7662; 
       color: #ffffff;
@@ -121,13 +116,10 @@
 <body>
 
 <div class="container">
-  <!-- 1番上の丸いプロフィール画像（アップロードした長い名前のファイルを指定しています） -->
   <img src="copy_38CB9381-9616-4B2C-8B2C-8BB49B7BE23E.png" alt="プロフィール写真" class="profile-img">
 
-  <!-- 上のメッセージ -->
   <p class="greeting">ONE講師の福島です！<br>それぞれにあったアドバイスをさせて頂きます！</p>
 
-  <!-- LINE友だち追加URL -->
   <a href="https://lin.ee/QNi1Zyg" class="line-btn">友だち追加する</a>
 
   <div class="or-text">または</div>
@@ -136,7 +128,6 @@
     <div class="box-title">LINE IDで追加</div>
     <div class="box-subtitle">LINEアプリの検索からも追加できます</div>
     
-    <!-- LINE ID -->
     <div class="id-display" id="line-id">@087yxxkc</div>
     
     <button class="copy-btn" onclick="copyId()">LINE IDをコピー</button>
