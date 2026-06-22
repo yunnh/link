@@ -8,15 +8,25 @@
     /* 全体の背景（アイボリー・白系） */
     body {
       background-color: #f9f6f0; 
-      color: #4a3f35; /* 濃いめのブラウンで文字を読みやすく */
+      color: #4a3f35; 
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       text-align: center;
-      padding: 20px 15px;
+      padding: 30px 15px;
       margin: 0;
     }
     .container {
       max-width: 400px;
       margin: 0 auto;
+    }
+    /* ★ 丸いプロフィール画像の設定 */
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover; /* 縦横比を崩さずに綺麗に収めます */
+      border-radius: 50%; /* 写真を綺麗な丸型に切り抜きます */
+      border: 3px solid #ffffff; /* 白い可愛い枠線 */
+      box-shadow: 0 4px 10px rgba(74, 63, 53, 0.1); /* 軽い影 */
+      margin-bottom: 15px;
     }
     .greeting {
       font-weight: bold;
@@ -25,7 +35,7 @@
       line-height: 1.8;
       letter-spacing: 0.5px;
     }
-    /* LINE追加ボタン（優しい緑に） */
+    /* LINE追加ボタン */
     .line-btn {
       display: block;
       background-color: #61bb7d; 
@@ -37,7 +47,6 @@
       border-radius: 35px;
       margin-bottom: 15px;
       box-shadow: 0 4px 15px rgba(97, 187, 125, 0.2);
-      transition: background-color 0.2s;
     }
     .or-text {
       color: #a39585;
@@ -54,7 +63,7 @@
       box-shadow: 0 4px 12px rgba(74, 63, 53, 0.03);
     }
     .box-title {
-      color: #8c7662; /* ベージュブラウン */
+      color: #8c7662; 
       font-size: 20px;
       font-weight: bold;
       margin-top: 0;
@@ -66,7 +75,7 @@
       font-size: 12px;
       margin-bottom: 20px;
     }
-    /* ID表示部分（薄いアイボリー） */
+    /* ID表示部分 */
     .id-display {
       background-color: #fbf9f6;
       border: 1px solid #f0eae1;
@@ -78,7 +87,7 @@
       letter-spacing: 1px;
       color: #5c4e40;
     }
-    /* コピーボタン（ベージュブラウン） */
+    /* コピーボタン */
     .copy-btn {
       background-color: #8c7662; 
       color: #ffffff;
@@ -112,8 +121,13 @@
 <body>
 
 <div class="container">
+  <!-- 1番上の丸いプロフィール画像（アップロードした長い名前のファイルを指定しています） -->
+  <img src="copy_38CB9381-9616-4B2C-8B2C-8BB49B7BE23E.png" alt="プロフィール写真" class="profile-img">
+
+  <!-- 上のメッセージ -->
   <p class="greeting">ONE講師の福島です！<br>それぞれにあったアドバイスをさせて頂きます！</p>
 
+  <!-- LINE友だち追加URL -->
   <a href="https://lin.ee/QNi1Zyg" class="line-btn">友だち追加する</a>
 
   <div class="or-text">または</div>
@@ -122,6 +136,7 @@
     <div class="box-title">LINE IDで追加</div>
     <div class="box-subtitle">LINEアプリの検索からも追加できます</div>
     
+    <!-- LINE ID -->
     <div class="id-display" id="line-id">@087yxxkc</div>
     
     <button class="copy-btn" onclick="copyId()">LINE IDをコピー</button>
